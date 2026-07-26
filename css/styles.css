@@ -1,65 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Monda:wght@400..700&family=Short+Stack&display=swap');
 
-a {
-	text-decoration: none;
-	color: #adb5bd;
+/*******************************************************/
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #457b9d;
 }
 
-a:hover {
+button:hover {
 	cursor: pointer;
 }
 
-
-body {
-	background-color: #131313;
-	font-family: "Zen Dots";
-}
-
-h2 {
-	margin-left: 2%;
-}
-
-.bgimage {
-	background-image: url(../pictures/bgimage.jpg);
-	background-size: auto;
-	background-position: 50%;
-	background-repeat: no-repeat;
+.bottom {
+	align-self: center;
 	margin-top: 10%;
+	display: flex;
 }
 
-.me{
-	display: block;
-	margin-left: auto;
+.bottom p {
 	margin-right: auto;
-	border-radius: 50%;
-    border: 1px solid purple;
-    width: 300px;
+	margin-left: auto;
+	font-family: "Monda";
 }
 
-.who {
+.centercontent {
 	display: flex;
 	justify-content: center;
-	color: #e9ecef;
+	align-content: center;
+	font-family: "Monda";
+	color: #023047;
 }
 
-
-@media(max-width: 540px){
-	.who {
-		flex-direction: column;
-		align-items: center;
-	}
+.centercontent * {
+	margin: 0 1%;
 }
 
-/*******************     Navigation  **********************/
+.centercontent i {
+	align-content: center;
+}
 
 .logo {
-	width: 18vh;
+	max-width: 10vh;
+}
+
+.logo:hover{
+	cursor: pointer;
+}
+
+.piccenter {
+	display: flex;
+}
+
+.me {
+	max-width: 40vh;
+	border: solid 2px #f1faee;
+	border-radius: 50%;
+	margin-top: 10%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4%;
 }
 
 .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1% 2%;
+	font-family: "Freckle Face";
+	/*box-shadow: 5px 5px lightblue;*/
 }
 
 .nav li {
@@ -67,14 +76,21 @@ h2 {
 	list-style-type: none;
 	display: inline-block;
 	padding-left: 20px;
-	color: #e9ecef;
+	color: #f1faee;
+}
+
+.nav a{
+	text-decoration: none;
+	color: #f1faee;
 }
 
 .pbutton {
 	border-radius: 15px;
 	padding: 5px 20px;
 	background-color: #003566;
-	color: white;
+	color: #f1faee;
+	font-family: "Freckle Face";
+	font-size: 15px;
 }
 
 .pbutton:active {
@@ -83,10 +99,37 @@ h2 {
 	transform: translateY(4px);
 }
 
+.socials {
+	margin-top: 20%;
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2%;
+}
+
+.socials a {
+	color: #f1faee;
+}
+
+.titles {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10%;
+}
+
+.titles li {
+	display: inline-block;
+	margin-right: 2%;
+	list-style-type: none;
+}
+
+@media (max-width: 1200px){
+	.me {
+		max-width: 50vw;
+	}
+}
+
 @media (max-width: 540px) {
 	.nav {
 		flex-direction: column;
 	}
 }
-
-/**************************************** END NAVIGATION **/
