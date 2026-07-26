@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Monda:wght@400..700&family=Short+Stack&display=swap');
+
+/****************************** Nav ***************************/
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #457b9d;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Monda";
+  color: #f1faee;
+}
+
+.aboutpic{
+	max-width: 80%;
+  border: solid 2px #f1faee;
+  border-radius: 15px;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.content {
+  margin-left: 2%;
+  font-family: "Monda";
+  color: #f1faee;
+}
+
+.content-left {
+  margin-left: 1%;
+  font-family: "Monda";
+  color: #f1faee;
+  max-width: 20%;
+}
+
+.content-lefter {
+  margin-left: 2%;
+  font-family: "Monda";
+  color: #f1faee;
+  max-width: 50%;
+}
+
+.content-right {
+  margin-left: 3%;
+  font-family: "Monda";
+  color: #f1faee;
+  max-width: 20%;
+}
+
+.logo {
+	max-width: 10vh;
+}
+
+.logo:hover{
+	cursor: pointer;
+}
+
+  .nav {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	padding: 1% 2%;
+  	font-family: "Freckle Face";
+    margin-bottom: 6%;
+  	/*box-shadow: 5px 5px lightblue;*/
+  }
+
+  .nav li {
+  	align-content: flex-end;
+  	list-style-type: none;
+  	display: inline-block;
+  	padding-left: 20px;
+  	color: #f1faee;
+  }
+
+  .nav a{
+  	text-decoration: none;
+  	color: #f1faee;
+  }
+
+  .pbutton {
+  	border-radius: 15px;
+  	padding: 5px 20px;
+  	background-color: #003566;
+  	color: #f1faee;
+  	font-family: "Freckle Face";
+  	font-size: 15px;
+  }
+
+  .pbutton:active {
+  	background-color: #1a759f;
+  	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+  }
+
+  .picleft {
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+
+  .picmid {
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  .picright {
+    margin-left: 10%;
+    margin-bottom: 5%;
+		padding-right: 2%;
+  }
+
+  /****************** Footer Styles ******************/
+
+  .bottom {
+  	align-self: center;
+  	margin-top: 10%;
+  	display: flex;
+  }
+
+  .bottom p {
+  	margin-right: auto;
+  	margin-left: auto;
+  	font-family: "Monda";
+  }
+
+  .socials {
+  	margin-top: 20%;
+  	display: flex;
+  	justify-content: space-evenly;
+  	margin-bottom: 2%;
+  }
+
+  .socials a {
+  	color: #f1faee;
+  }
+
+	@media (max-width: 1000px){
+		.article{
+			flex-direction: column;
+			align-items: center;
+		}
+		.content-left{
+			max-width: 100%;
+		}
+		.content-right{
+			max-width: 100%;
+		}
+		.content-lefter {
+			max-width: 100%;
+		}
+		.picleft {
+			max-width: 80%;
+		}
+		.picmid {
+			max-width: 80%;
+		}
+		.picright {
+			padding-left: 1%;
+			max-width: 80%;
+		}
+	};
+
+@media (max-width: 940px){
+	.aboutpic {
+		max-width: 80vh;
+	};
+	.picmid {
+		max-width: 80%;
+	};
+	.picright {
+		padding-left: 1%;
+		max-width: 80%;
+	};
+};
+
+
+/*******************************************************/
+
+@media (max-width: 540px) {
+	.nav {
+		flex-direction: column;
+		align-items: center;
+	}
+	}
+
+
+		.content-left {
+			justify-content: left;
+			width: 100vh;
+		}
+
+		.content-lefter {
+			width: 100vh;
+		}
+
+		.content-right{
+			width: 100vh;
+		}
+	}
